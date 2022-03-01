@@ -17,5 +17,19 @@ namespace WinFormsApp1
             InitializeComponent();
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            string user = txtuser.Text;
+            string pass = txtPass.Text;
+            if(user == "admin" && pass == "admin")
+            {
+                MessageBox.Show("login success");
+            }
+        }
     }
 }
